@@ -6,17 +6,29 @@ https://renawells.github.io/adwaita-android-emulator/
 This is a GTK/libadwaita Android Emulator manager for Linux.
 It supports native glibc systems and Alpine/musl through an Arch chroot runtime.
 
+About:
+Android Emulator is a Linux-first control surface for Android SDK setup,
+optimized AVD creation, QEMU-backed Android PC ISO profiles, controller checks,
+launch logs, and AppImage distribution. It is currently in internal testing.
+
 Key features:
 - Android SDK detection
 - Setup wizard for SDK, Arch chroot, and gaming AVD setup
 - Gaming profile for Gaming_API_30
 - Custom LineageOS x86_64 gaming AVD import and PC ISO QEMU profile
+- MIUI Android-x86 community ISO QEMU/KVM profile
 - Controller detection
 - AppImage packaging
 - GitHub Pages website
 
 Recommended AVD:
 Gaming_API_30
+
+Recent changelog:
+- 2026-07-05: Added Gaming_MIUI_x86_PC_ISO for the MIUI-12-X86-PORTABLE-ANDROID-V1-PUCKROM2020.iso community image.
+- 2026-07-05: Added LineageOS x86_64 custom image import and LineageOS PC ISO QEMU/KVM support.
+- 2026-07-04: Added AppImage packaging, controller support, website dark mode, real screenshot, HTTPS hosting, and third-party notices.
+- 2026-07-03: Stabilized Alpine/musl runtime through an Arch chroot after gcompat crashes with the Google emulator binary.
 
 AppImage download:
 https://renawells.github.io/adwaita-android-emulator/downloads/Android_Emulator-x86_64.AppImage

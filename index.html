@@ -28,6 +28,8 @@
     <div class="topbar-actions">
       <nav aria-label="Page sections">
         <a href="#download">Download</a>
+        <a href="#about">About</a>
+        <a href="#changelog">Changelog</a>
         <a href="#runtime">Runtime</a>
         <a href="#checklist">Checklist</a>
         <a href="#feedback">Feedback</a>
@@ -80,6 +82,33 @@
       </div>
     </section>
 
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">About the app</p>
+          <h2>A Linux-first Android Emulator manager built around real setup problems.</h2>
+        </div>
+        <p>It wraps Android SDK setup, AVD creation, QEMU ISO profiles, and controller checks in a GTK/libadwaita interface that works across common Linux distro families.</p>
+      </div>
+      <div class="about-grid">
+        <article class="feature about-card">
+          <span class="feature-mark">A</span>
+          <h3>What it does</h3>
+          <p>Android Emulator manages SDK detection, setup commands, optimized gaming profiles, and launch logs from one native desktop window.</p>
+        </article>
+        <article class="feature about-card">
+          <span class="feature-mark">B</span>
+          <h3>Why it exists</h3>
+          <p>Alpine and other nonstandard Linux setups need clearer runtime handling than the stock emulator flow provides, especially when glibc tooling, KVM, and QEMU are involved.</p>
+        </article>
+        <article class="feature about-card">
+          <span class="feature-mark">C</span>
+          <h3>Current focus</h3>
+          <p>The internal test build focuses on gaming-friendly Android images, controller visibility, AppImage distribution, and honest status reporting when a backend is missing.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section showcase" id="screenshot">
       <div class="section-heading">
         <div>
@@ -119,6 +148,62 @@
           <li>Movable Setup and About windows</li>
         </ul>
       </article>
+    </section>
+
+    <section class="section changelog-section" id="changelog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Changelog</p>
+          <h2>Recent internal testing changes</h2>
+        </div>
+        <p>These notes track the app and website work testers should know about before filing issues.</p>
+      </div>
+      <div class="changelog">
+        <article class="change-entry current">
+          <time datetime="2026-07-05">July 5, 2026</time>
+          <div>
+            <h3>MIUI Android-x86 ISO profile</h3>
+            <ul class="plain-list">
+              <li>Added <code>Gaming_MIUI_x86_PC_ISO</code> as a QEMU/KVM launcher profile.</li>
+              <li>Downloaded and verified the community <code>MIUI-12-X86-PORTABLE-ANDROID-V1-PUCKROM2020.iso</code> image.</li>
+              <li>Installed Alpine QEMU display/audio modules and switched the ISO launcher to a compatible VGA device.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="change-entry">
+          <time datetime="2026-07-05">July 5, 2026</time>
+          <div>
+            <h3>LineageOS and PC ISO support</h3>
+            <ul class="plain-list">
+              <li>Added SDK-style LineageOS x86_64 custom image import.</li>
+              <li>Added <code>Gaming_LineageOS_PC_ISO</code> for bootable Android PC ISO testing through QEMU/KVM.</li>
+              <li>Created persistent raw disk handling for ISO-backed profiles.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="change-entry">
+          <time datetime="2026-07-04">July 4, 2026</time>
+          <div>
+            <h3>AppImage, website, and controller pass</h3>
+            <ul class="plain-list">
+              <li>Packaged the GTK/libadwaita launcher as an x86_64 AppImage.</li>
+              <li>Added controller detection and controller-oriented setup toggles.</li>
+              <li>Published the internal testing website with HTTPS, crawler files, a real screenshot, dark mode, and third-party notices.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="change-entry">
+          <time datetime="2026-07-03">July 3, 2026</time>
+          <div>
+            <h3>Alpine runtime stabilization</h3>
+            <ul class="plain-list">
+              <li>Moved Alpine/musl emulator execution to an Arch chroot runtime after Google emulator binaries crashed under gcompat.</li>
+              <li>Added setup flow for Android SDK command-line tools, Arch bootstrap, optimized AVD creation, and launcher wrappers.</li>
+              <li>Recommended SwiftShader-oriented gaming settings for older Intel HD Graphics systems.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="runtime">

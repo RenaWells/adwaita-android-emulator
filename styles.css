@@ -230,7 +230,8 @@ main {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   line-height: 1.08;
 }
@@ -247,6 +248,11 @@ h1 {
 
 h2 {
   font-size: 1.55rem;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: 1.05rem;
   letter-spacing: 0;
 }
 
@@ -358,6 +364,21 @@ h2 {
 
 .section {
   padding: 8px 0;
+}
+
+.about-section,
+.changelog-section {
+  scroll-margin-top: 92px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-card p {
+  margin-top: 12px;
 }
 
 .section-grid {
@@ -491,6 +512,39 @@ tbody tr:hover td {
   background: color-mix(in srgb, var(--surface-strong) 62%, transparent);
 }
 
+.changelog {
+  display: grid;
+  gap: 14px;
+}
+
+.change-entry {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--small-shadow);
+}
+
+.change-entry.current {
+  border-color: color-mix(in srgb, var(--green) 58%, var(--line));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface-strong) 68%, transparent), var(--surface));
+}
+
+.change-entry time {
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.change-entry .plain-list {
+  margin-top: 12px;
+}
+
 .checklist-section {
   padding: 30px;
   border-radius: 8px;
@@ -597,6 +651,7 @@ footer {
   }
 
   .release-strip,
+  .about-grid,
   .section-grid,
   .checklist {
     grid-template-columns: 1fr;
@@ -604,6 +659,11 @@ footer {
 
   .section-heading {
     grid-template-columns: 1fr;
+  }
+
+  .change-entry {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .checklist-section {

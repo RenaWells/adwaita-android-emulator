@@ -55,6 +55,13 @@ user downloads them separately on their own system.
   - Source: https://developer.android.com/studio
   - Use: emulator binaries, SDK manager, ADB, and Android system images
 
+- LineageOS x86_64 custom images
+  - Project: LineageOS and image/package maintainers
+  - License: LineageOS and bundled component licenses
+  - Source: https://lineageos.org/
+  - Use: optional user-supplied custom emulator image for the
+    `Gaming_LineageOS_x86_64` AVD
+
 - Arch Linux bootstrap and packages
   - Project: Arch Linux and upstream package maintainers
   - License: per-package licenses from Arch Linux and upstream projects
@@ -108,4 +115,3 @@ not part of the app's own source code.
 The app icon SVG, website preview SVG, website screenshot, website copy, shell
 scripts, and Python application code in this repository were created for this
 project unless a file states otherwise.
-

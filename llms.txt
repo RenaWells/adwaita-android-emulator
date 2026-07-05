@@ -10,6 +10,7 @@ Key features:
 - Android SDK detection
 - Setup wizard for SDK, Arch chroot, and gaming AVD setup
 - Gaming profile for Gaming_API_30
+- Custom LineageOS x86_64 gaming AVD import
 - Controller detection
 - AppImage packaging
 - GitHub Pages website

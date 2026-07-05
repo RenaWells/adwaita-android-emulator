@@ -114,6 +114,7 @@
           <li>Native emulator launch on glibc distros</li>
           <li>Arch chroot launch on Alpine/musl</li>
           <li>Gaming image download and optimized AVD creation</li>
+          <li>LineageOS x86_64 custom image import</li>
           <li>Controller detection through host input devices</li>
           <li>Movable Setup and About windows</li>
         </ul>
@@ -189,6 +190,7 @@
         <label><input type="checkbox" value="about"> About window opens and can be moved</label>
         <label><input type="checkbox" value="setup-window"> Setup window opens and can be moved</label>
         <label><input type="checkbox" value="gaming"> <code>Gaming_API_30</code> launches from the gaming row</label>
+        <label><input type="checkbox" value="lineage"> <code>Gaming_LineageOS_x86_64</code> imports and launches when a compatible image is supplied</label>
         <label><input type="checkbox" value="controller"> Controller appears after plug-in and Refresh</label>
         <label><input type="checkbox" value="stop"> Stop button terminates a running command</label>
       </div>
@@ -201,6 +203,7 @@
         <ul class="plain-list">
           <li>The AppImage packages the launcher, not a full GTK or Android SDK runtime.</li>
           <li>On Alpine/musl, the Google emulator still needs the Arch chroot runtime.</li>
+          <li>LineageOS imports require SDK-style emulator images, not PC ISO images.</li>
           <li>Intel HD 5500 host GPU rendering is unstable; SwiftShader is expected.</li>
           <li>Heavy 3D games may remain slow on low-power CPUs.</li>
         </ul>

@@ -18,17 +18,17 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">
-      <img src="assets/app-icon.svg" alt="" width="36" height="36">
-      <div>
+    <a class="brand" href="#top" aria-label="Android Emulator home">
+      <img src="assets/app-icon.svg" alt="" width="40" height="40">
+      <span>
         <strong>Android Emulator</strong>
-        <span>Internal testing</span>
-      </div>
-    </div>
+        <small>Internal testing</small>
+      </span>
+    </a>
     <div class="topbar-actions">
       <nav aria-label="Page sections">
         <a href="#download">Download</a>
-        <a href="#matrix">Runtime</a>
+        <a href="#runtime">Runtime</a>
         <a href="#checklist">Checklist</a>
         <a href="#feedback">Feedback</a>
         <a href="third-party-notices.html">Licenses</a>
@@ -40,50 +40,63 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Build 0.2.0 · x86_64 AppImage</p>
+  <main id="top">
+    <section class="hero" aria-label="Android Emulator release">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Build 0.2.0 - x86_64 AppImage</p>
         <h1>Android Emulator</h1>
-        <p class="lead">GTK/libadwaita control surface for Android Emulator testing across Linux distros, with native glibc support, Alpine/musl Arch chroot support, gaming profile setup, and controller detection.</p>
+        <p class="lead">A GTK/libadwaita control surface for Android Emulator testing across Linux, with Alpine/musl support, gaming AVD setup, controller detection, and a polished AppImage workflow.</p>
         <div class="hero-pills" aria-label="Release highlights">
           <span>KVM ready</span>
           <span>Controller aware</span>
-          <span>Alpine supported</span>
+          <span>Arch chroot fallback</span>
+          <span>Real app screenshot</span>
         </div>
         <div class="actions" id="download">
           <a class="button primary" href="downloads/Android_Emulator-x86_64.AppImage" download>Download AppImage</a>
-          <a class="button" href="https://renawells.github.io/adwaita-android-emulator/">Open HTTPS site</a>
-          <button class="button" type="button" id="copyRun">Copy run command</button>
+          <a class="button" href="#screenshot">View screenshot</a>
+          <button class="button quiet" type="button" id="copyRun">Copy run command</button>
         </div>
+      </div>
+    </section>
+
+    <section class="release-strip" aria-label="Release facts">
+      <div>
+        <span class="label">Recommended AVD</span>
+        <strong>Gaming_API_30</strong>
+      </div>
+      <div>
+        <span class="label">Runtime</span>
+        <strong>Native glibc or Arch chroot</strong>
+      </div>
+      <div>
+        <span class="label">Graphics path</span>
+        <strong>KVM + SwiftShader</strong>
+      </div>
+      <div>
+        <span class="label">Site</span>
+        <strong>HTTPS + crawler files</strong>
+      </div>
+    </section>
+
+    <section class="section showcase" id="screenshot">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Current interface</p>
+          <h2>One window for setup, devices, launch logs, and controllers.</h2>
+        </div>
+        <p>The screenshot below is captured from the real app running on this system.</p>
       </div>
       <figure class="preview">
         <img src="assets/app-screenshot.png" alt="Real screenshot of the Android Emulator GTK app showing SDK details, virtual devices, gaming launcher, controllers, and log output">
       </figure>
     </section>
 
-    <section class="band status-band" aria-label="Release facts">
-      <div>
-        <span class="label">HTTPS URL</span>
-        <strong>https://renawells.github.io/adwaita-android-emulator/</strong>
-      </div>
-      <div>
-        <span class="label">Current host</span>
-        <strong>Alpine · musl · Arch chroot runtime</strong>
-      </div>
-      <div>
-        <span class="label">Recommended AVD</span>
-        <strong>Gaming_API_30</strong>
-      </div>
-      <div>
-        <span class="label">Graphics path</span>
-        <strong>KVM + SwiftShader</strong>
-      </div>
-    </section>
-
-    <section class="section-grid">
-      <article class="panel">
-        <h2>Tester Start</h2>
+    <section class="section-grid feature-grid">
+      <article class="feature">
+        <span class="feature-mark">01</span>
+        <h2>Fast Tester Start</h2>
         <ol class="steps">
           <li>Download the AppImage.</li>
           <li>Run <code>chmod +x Android_Emulator-x86_64.AppImage</code>.</li>
@@ -93,8 +106,9 @@
         </ol>
       </article>
 
-      <article class="panel">
-        <h2>Scope</h2>
+      <article class="feature">
+        <span class="feature-mark">02</span>
+        <h2>What It Covers</h2>
         <ul class="plain-list">
           <li>SDK detection and manual SDK path entry</li>
           <li>Native emulator launch on glibc distros</li>
@@ -106,9 +120,12 @@
       </article>
     </section>
 
-    <section class="section" id="matrix">
+    <section class="section" id="runtime">
       <div class="section-heading">
-        <h2>Runtime Matrix</h2>
+        <div>
+          <p class="eyebrow">Compatibility</p>
+          <h2>Runtime Matrix</h2>
+        </div>
         <p>Use this table when assigning internal test passes.</p>
       </div>
       <div class="table-wrap">
@@ -124,31 +141,31 @@
           <tbody>
             <tr>
               <td>Alpine</td>
-              <td>Auto → Arch chroot</td>
+              <td>Auto -> Arch chroot</td>
               <td><code>apk</code></td>
               <td>Emulator launches through <code>arch-run-emulator.sh</code>.</td>
             </tr>
             <tr>
               <td>Debian / Ubuntu</td>
-              <td>Auto → Native</td>
+              <td>Auto -> Native</td>
               <td><code>apt</code></td>
               <td>Emulator launches directly from Android SDK.</td>
             </tr>
             <tr>
               <td>Fedora / RHEL</td>
-              <td>Auto → Native</td>
+              <td>Auto -> Native</td>
               <td><code>dnf</code></td>
               <td>SDK tools install and AVD appears in the list.</td>
             </tr>
             <tr>
               <td>Arch / Manjaro</td>
-              <td>Auto → Native</td>
+              <td>Auto -> Native</td>
               <td><code>pacman</code></td>
               <td>Native emulator path is preferred over chroot.</td>
             </tr>
             <tr>
               <td>openSUSE</td>
-              <td>Auto → Native</td>
+              <td>Auto -> Native</td>
               <td><code>zypper</code></td>
               <td>Host dependencies install or report a clear failure.</td>
             </tr>
@@ -157,9 +174,12 @@
       </div>
     </section>
 
-    <section class="section" id="checklist">
+    <section class="section checklist-section" id="checklist">
       <div class="section-heading">
-        <h2>Test Checklist</h2>
+        <div>
+          <p class="eyebrow">QA pass</p>
+          <h2>Test Checklist</h2>
+        </div>
         <p>Progress is saved in this browser.</p>
       </div>
       <div class="checklist" data-checklist>
@@ -175,7 +195,8 @@
     </section>
 
     <section class="section-grid" id="feedback">
-      <article class="panel">
+      <article class="feature limits">
+        <span class="feature-mark">03</span>
         <h2>Known Limits</h2>
         <ul class="plain-list">
           <li>The AppImage packages the launcher, not a full GTK or Android SDK runtime.</li>
@@ -184,7 +205,8 @@
           <li>Heavy 3D games may remain slow on low-power CPUs.</li>
         </ul>
       </article>
-      <article class="panel">
+      <article class="feature feedback-card">
+        <span class="feature-mark">04</span>
         <h2>Feedback Template</h2>
         <textarea id="feedbackText" readonly></textarea>
         <button class="button primary" type="button" id="copyFeedback">Copy feedback</button>
@@ -195,7 +217,7 @@
   <footer>
     <span>Internal testing only</span>
     <a href="third-party-notices.html">Third-party licenses</a>
-    <span>Served locally by Apache over HTTPS</span>
+    <span>Published with GitHub Pages</span>
   </footer>
 
   <script src="app.js"></script>

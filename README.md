@@ -11,3 +11,6 @@ Use GitHub Pages from the `main` branch root, or copy these files into the
 
 Expected Pages URL:
 `https://renawells.github.io/adwaita-android-emulator/`
+
+Third-party notices:
+`https://renawells.github.io/adwaita-android-emulator/third-party-notices.html`

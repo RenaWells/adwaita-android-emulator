@@ -19,3 +19,6 @@ Gaming_API_30
 
 AppImage download:
 https://renawells.github.io/adwaita-android-emulator/downloads/Android_Emulator-x86_64.AppImage
+
+Third-party notices:
+https://renawells.github.io/adwaita-android-emulator/third-party-notices.html

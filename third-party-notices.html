@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Third-party licenses and credits for the Android Emulator GTK/libadwaita app.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Android Emulator Third-Party Licenses">
+  <meta property="og:description" content="Credits and license notices for Android Emulator dependencies, runtimes, and tooling.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://renawells.github.io/adwaita-android-emulator/assets/app-screenshot.png">
+  <meta property="og:url" content="https://renawells.github.io/adwaita-android-emulator/third-party-notices.html">
+  <link rel="canonical" href="https://renawells.github.io/adwaita-android-emulator/third-party-notices.html">
+  <title>Third-Party Licenses - Android Emulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/app-icon.svg" alt="" width="36" height="36">
+      <div>
+        <strong>Android Emulator</strong>
+        <span>Third-party licenses</span>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <nav aria-label="Site pages">
+        <a href="index.html">Home</a>
+        <a href="downloads/Android_Emulator-x86_64.AppImage" download>Download</a>
+      </nav>
+      <button class="theme-toggle" type="button" id="themeToggle" role="switch" aria-checked="false">
+        <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+        <span class="toggle-label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Credits</p>
+          <h1>Third-Party Licenses</h1>
+        </div>
+        <p>This page credits dependencies, runtimes, services, and tools used by the app.</p>
+      </div>
+      <p class="notice-intro">This is an attribution and license notice page for third-party components. It is not a license grant for this project's own source code.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Included in the AppImage</h2>
+        <p>The AppImage bundles the launcher and AppImage runtime, not a full GTK or Android SDK stack.</p>
+      </div>
+      <ul class="notice-list">
+        <li><strong>AppImage type 2 runtime</strong> - MIT license. Source: <a href="https://github.com/AppImage/type2-runtime">AppImage/type2-runtime</a>. Used as the executable runtime prepended to the AppImage payload.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Required Host Runtime</h2>
+        <p>Installed by the operating system or the user, not bundled into the AppImage.</p>
+      </div>
+      <ul class="notice-list">
+        <li><strong>Python</strong> - Python Software Foundation License. Source: <a href="https://www.python.org/">python.org</a>. Used as the application runtime.</li>
+        <li><strong>GTK 4</strong> - LGPL-2.1-or-later. Source: <a href="https://gtk.org/">gtk.org</a>. Used for application widgets through PyGObject.</li>
+        <li><strong>libadwaita</strong> - LGPL-2.1-or-later. Source: <a href="https://gitlab.gnome.org/GNOME/libadwaita">GNOME libadwaita</a>. Used for Adwaita widgets and styling.</li>
+        <li><strong>PyGObject / GObject Introspection</strong> - LGPL-2.1-or-later. Source: <a href="https://pygobject.gnome.org/">pygobject.gnome.org</a>. Used for Python bindings to GTK, libadwaita, GLib, Gio, and related libraries.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Downloaded by Setup</h2>
+        <p>These are fetched or installed by the setup wizard or script on the user's machine.</p>
+      </div>
+      <ul class="notice-list">
+        <li><strong>Android SDK tools, emulator, platform-tools, and system images</strong> - Android SDK License Agreement and component-specific licenses. Source: <a href="https://developer.android.com/studio">Android Studio downloads</a>. Used for SDK management, ADB, emulator binaries, and Android system images.</li>
+        <li><strong>Arch Linux bootstrap and packages</strong> - per-package licenses from Arch Linux and upstream projects. Source: <a href="https://archlinux.org/">archlinux.org</a>. Used as the optional glibc runtime path on Alpine/musl systems.</li>
+        <li><strong>OpenJDK and distro packages</strong> - per-package licenses. Installed as host dependencies for SDK tooling and runtime integration.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Build and Hosting Tools</h2>
+        <p>Used to build, publish, host, or operate the project.</p>
+      </div>
+      <ul class="notice-list">
+        <li><strong>squashfs-tools / mksquashfs</strong> - GPL-2.0-or-later. Source: <a href="https://github.com/plougher/squashfs-tools">squashfs-tools</a>. Used to build the AppImage SquashFS payload.</li>
+        <li><strong>libarchive / bsdtar</strong> - BSD-style license. Source: <a href="https://www.libarchive.org/">libarchive.org</a>. Used for archive extraction during setup.</li>
+        <li><strong>GitHub CLI</strong> - MIT license. Source: <a href="https://github.com/cli/cli">cli/cli</a>. Used for publishing and repository workflow.</li>
+        <li><strong>GitHub Pages and GitHub Actions</strong> - GitHub service terms plus action-specific repository licenses. Source: <a href="https://github.com/actions">github.com/actions</a>. Used for static site hosting and deployment.</li>
+        <li><strong>Apache HTTP Server</strong> - Apache-2.0. Source: <a href="https://httpd.apache.org/">httpd.apache.org</a>. Used as the optional local internal-testing website host.</li>
+        <li><strong>cloudflared</strong> - Apache-2.0. Source: <a href="https://github.com/cloudflare/cloudflared">cloudflare/cloudflared</a>. Used for a temporary public tunnel during testing; not required by the app.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Project-Created Assets</h2>
+      </div>
+      <p class="notice-intro">The app icon SVG, website preview SVG, website screenshot, website copy, shell scripts, and Python application code in this repository were created for this project unless a file states otherwise.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Internal testing only</span>
+    <a href="index.html">Back to app site</a>
+    <span>Third-party notices</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

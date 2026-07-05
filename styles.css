@@ -348,14 +348,26 @@ h2 {
 }
 
 .steps,
-.plain-list {
+.plain-list,
+.notice-list {
   margin: 16px 0 0;
   padding-left: 20px;
 }
 
 .steps li,
-.plain-list li {
+.plain-list li,
+.notice-list li {
   margin: 9px 0;
+}
+
+.notice-list li {
+  max-width: 900px;
+}
+
+.notice-intro {
+  max-width: 860px;
+  margin: 16px 0 0;
+  color: var(--lead);
 }
 
 code {

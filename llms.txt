@@ -1,0 +1,21 @@
+# Android Emulator Internal Testing
+
+Public site:
+https://RenaWells.github.io/adawita-android-emulator/
+
+This is a GTK/libadwaita Android Emulator manager for Linux.
+It supports native glibc systems and Alpine/musl through an Arch chroot runtime.
+
+Key features:
+- Android SDK detection
+- Setup wizard for SDK, Arch chroot, and gaming AVD setup
+- Gaming profile for Gaming_API_30
+- Controller detection
+- AppImage packaging
+- GitHub Pages website
+
+Recommended AVD:
+Gaming_API_30
+
+AppImage download:
+https://RenaWells.github.io/adawita-android-emulator/downloads/Android_Emulator-x86_64.AppImage

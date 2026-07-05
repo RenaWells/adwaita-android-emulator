@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+  <rect width="920" height="620" rx="8" fill="#f7f9fa"/>
+  <rect x="1" y="1" width="918" height="618" rx="8" fill="none" stroke="#d9dee3" stroke-width="2"/>
+  <rect x="0" y="0" width="920" height="58" rx="8" fill="#ffffff"/>
+  <path d="M0 50h920" stroke="#d9dee3"/>
+  <circle cx="30" cy="29" r="7" fill="#d75f5f"/>
+  <circle cx="54" cy="29" r="7" fill="#d49b28"/>
+  <circle cx="78" cy="29" r="7" fill="#2e9d65"/>
+  <text x="118" y="35" font-family="Inter, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#1f2428">Android Emulator</text>
+  <rect x="750" y="15" width="72" height="28" rx="6" fill="#eef3f4" stroke="#d9dee3"/>
+  <text x="774" y="34" font-family="Inter, Segoe UI, sans-serif" font-size="13" fill="#384047">Stop</text>
+  <rect x="834" y="15" width="66" height="28" rx="6" fill="#1f7a5c"/>
+  <text x="853" y="34" font-family="Inter, Segoe UI, sans-serif" font-size="13" fill="#ffffff">Start</text>
+
+  <rect x="28" y="84" width="330" height="492" rx="8" fill="#ffffff" stroke="#d9dee3"/>
+  <text x="52" y="122" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#5c646b">ANDROID SDK</text>
+  <rect x="52" y="140" width="282" height="42" rx="7" fill="#f4f7f8" stroke="#d9dee3"/>
+  <text x="68" y="166" font-family="Inter, Segoe UI, sans-serif" font-size="14" fill="#1f2428">/home/rena/Android/Sdk</text>
+  <text x="52" y="214" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#5c646b">VIRTUAL DEVICES</text>
+  <rect x="52" y="232" width="282" height="46" rx="7" fill="#fdfdfd" stroke="#d9dee3"/>
+  <text x="68" y="260" font-family="Inter, Segoe UI, sans-serif" font-size="15" fill="#1f2428">Alpine_API_36</text>
+  <rect x="52" y="286" width="282" height="46" rx="7" fill="#edf7f2" stroke="#8cc7ad"/>
+  <text x="68" y="314" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#145a43">Gaming_API_30</text>
+  <text x="52" y="366" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#5c646b">GAMING LAUNCHER</text>
+  <rect x="52" y="384" width="282" height="58" rx="7" fill="#ffffff" stroke="#d9dee3"/>
+  <text x="68" y="408" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#1f2428">Gaming_API_30</text>
+  <text x="68" y="429" font-family="Inter, Segoe UI, sans-serif" font-size="12" fill="#5c646b">KVM · 2 GB · 540x960 · 30 Hz</text>
+  <rect x="274" y="398" width="38" height="28" rx="6" fill="#1f7a5c"/>
+  <path d="M288 406l14 7-14 7z" fill="#ffffff"/>
+  <text x="52" y="476" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#5c646b">CONTROLLERS</text>
+  <rect x="52" y="494" width="282" height="48" rx="7" fill="#fdfdfd" stroke="#d9dee3"/>
+  <text x="68" y="522" font-family="Inter, Segoe UI, sans-serif" font-size="14" fill="#1f2428">No game controller detected</text>
+
+  <rect x="386" y="84" width="506" height="492" rx="8" fill="#1f2428"/>
+  <text x="412" y="122" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#8ff0a4">$ /home/rena/Android/Sdk/arch-run-emulator.sh -avd Gaming_API_30</text>
+  <text x="412" y="156" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  Android emulator version 36.6.11.0</text>
+  <text x="412" y="188" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  Runtime: Arch chroot wrapper for musl</text>
+  <text x="412" y="220" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  KVM acceleration enabled</text>
+  <text x="412" y="252" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  GPU mode: swiftshader_indirect</text>
+  <text x="412" y="284" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  Loading snapshot 'default-boot'</text>
+  <rect x="412" y="322" width="420" height="14" rx="7" fill="#394148"/>
+  <rect x="412" y="322" width="314" height="14" rx="7" fill="#1f7a5c"/>
+  <text x="412" y="368" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  Setup wizard: Native / Arch chroot / Auto</text>
+  <text x="412" y="400" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#dce4e8">INFO  Controller support enabled</text>
+  <text x="412" y="432" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="#8ff0a4">booted</text>
+</svg>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+This public test site may be fetched by search crawlers, link preview bots,
+archival tools, and AI assistants. Please respect normal request rates.

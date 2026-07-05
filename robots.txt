@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://RenaWells.github.io/adawita-android-emulator/sitemap.xml
+
+LLMs: https://RenaWells.github.io/adawita-android-emulator/llms.txt

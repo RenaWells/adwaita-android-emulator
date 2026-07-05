@@ -15,6 +15,7 @@ Key features:
 - Android SDK detection
 - Setup wizard for SDK, Arch chroot, and gaming AVD setup
 - Gaming profile for Gaming_API_30
+- Immutable host setup for SteamOS, Bazzite, Bluefin, and ostree systems
 - Custom LineageOS x86_64 gaming AVD import and PC ISO QEMU profile
 - MIUI Android-x86 community ISO QEMU/KVM profile
 - Controller detection
@@ -25,6 +26,7 @@ Recommended AVD:
 Gaming_API_30
 
 Recent changelog:
+- 2026-07-05: Added immutable distro detection, default host package skip, and portable Java 17 setup for SteamOS, Bazzite, Bluefin, and ostree-style systems.
 - 2026-07-05: Added Gaming_MIUI_x86_PC_ISO for the MIUI-12-X86-PORTABLE-ANDROID-V1-PUCKROM2020.iso community image.
 - 2026-07-05: Added LineageOS x86_64 custom image import and LineageOS PC ISO QEMU/KVM support.
 - 2026-07-04: Added AppImage packaging, controller support, website dark mode, real screenshot, HTTPS hosting, and third-party notices.

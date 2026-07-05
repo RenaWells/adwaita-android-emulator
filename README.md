@@ -10,4 +10,4 @@ Use GitHub Pages from the `main` branch root, or copy these files into the
 `site/` directory of the app repository and use the GitHub Actions workflow.
 
 Expected Pages URL:
-`https://RenaWells.github.io/adawita-android-emulator/`
+`https://renawells.github.io/adawita-android-emulator/`

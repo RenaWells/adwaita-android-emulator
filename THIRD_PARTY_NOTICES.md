@@ -60,7 +60,14 @@ user downloads them separately on their own system.
   - License: LineageOS and bundled component licenses
   - Source: https://lineageos.org/
   - Use: optional user-supplied custom emulator image for the
-    `Gaming_LineageOS_x86_64` AVD
+    `Gaming_LineageOS_x86_64` AVD or `Gaming_LineageOS_PC_ISO` QEMU profile
+
+- QEMU
+  - Project: QEMU
+  - License: GPL-2.0-only and other component licenses, see upstream license
+    files
+  - Source: https://www.qemu.org/
+  - Use: optional host runtime for the LineageOS x86_64 PC ISO gaming profile
 
 - Arch Linux bootstrap and packages
   - Project: Arch Linux and upstream package maintainers
